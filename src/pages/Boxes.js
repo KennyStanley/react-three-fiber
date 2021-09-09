@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { VRCanvas, DefaultXRControllers } from '@react-three/xr'
+import { VRCanvas, Hands, DefaultXRControllers } from '@react-three/xr'
+import { OrbitControls } from '@react-three/drei'
 
 function Box(props) {
   // This reference will give us direct access to the mesh
@@ -36,6 +37,7 @@ export default function BoxesPage() {
       <pointLight position={[-10, -10, -10]} />
       <Box position={[-1.2, 0, 0]} />
       <Box position={[1.2, 0, 0]} />
+      <OrbitControls />
     </VRCanvas>
   )
 }
