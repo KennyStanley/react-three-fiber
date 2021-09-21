@@ -7,19 +7,23 @@ import {
   useRouteMatch,
   useParams
 } from "react-router-dom"
-import BoxesPage from "./pages/Boxes"
 import CharacterPage from "./pages/Character"
+import ConferencePage from "./pages/Conference"
 import { Home } from "./pages/Home"
+import PlaygroundPage from "./pages/Playground"
 
 export default function App() {
   return (
     <Router>
         <Switch>
-          <Route path="/boxes">
-            <BoxesPage />
-          </Route>
           <Route path="/character">
             <CharacterPage />
+          </Route>
+          <Route path="/playground">
+            <PlaygroundPage />
+          </Route>
+          <Route path="/conference">
+            <ConferencePage />
           </Route>
           <Route path="/">
             <Home />

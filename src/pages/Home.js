@@ -6,10 +6,13 @@ export const Home = () => {
         <div>
             <ul>
                 <li>
-                    <Link to="/boxes">Boxes</Link>
+                    <Link to="/character">Character</Link>
                 </li>
                 <li>
-                    <Link to="/character">Character</Link>
+                    <Link to="/playground">Playground</Link>
+                </li>
+                <li>
+                    <Link to="/conference">Conference</Link>
                 </li>
             </ul>
         </div>
